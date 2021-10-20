@@ -25,6 +25,7 @@ fn parse_args(args: &Vec<String>) -> ArgMatches {
 
     return App::new("Intersperse")
         .version(crate_version!())
+        .about("Takes a list of strings and intersperses them with a delimiter")
         .setting(AppSettings::GlobalVersion)
         .setting(AppSettings::VersionlessSubcommands)
         .arg(&arg_delim)
